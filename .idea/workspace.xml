@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6aae9311-f110-49d1-ae33-794e29bccccd" name="Default Changelist" comment="" />
+    <list default="true" id="6aae9311-f110-49d1-ae33-794e29bccccd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Day3/practice.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +30,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.practice (1)">
+    <configuration name="practice (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_challenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Day3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Day3/practice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_challenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.practice (1)" />
         <item itemvalue="Python.practice" />
       </list>
     </recent_temporary>
@@ -69,21 +94,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="757" height="213" key="GridCell.Tab.0.bottom" timestamp="1586874250557">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="680" height="193" key="GridCell.Tab.0.bottom" timestamp="1586959638008">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="757" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1586874250557" />
-    <state width="757" height="213" key="GridCell.Tab.0.center" timestamp="1586874250557">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="680" height="193" key="GridCell.Tab.0.bottom/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1586959638008" />
+    <state width="680" height="193" key="GridCell.Tab.0.center" timestamp="1586959638008">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="757" height="213" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1586874250557" />
-    <state width="757" height="213" key="GridCell.Tab.0.left" timestamp="1586874250557">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="680" height="193" key="GridCell.Tab.0.center/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1586959638008" />
+    <state width="680" height="193" key="GridCell.Tab.0.left" timestamp="1586959638007">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="757" height="213" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1586874250557" />
-    <state width="757" height="213" key="GridCell.Tab.0.right" timestamp="1586874250557">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state width="680" height="193" key="GridCell.Tab.0.left/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1586959638007" />
+    <state width="680" height="193" key="GridCell.Tab.0.right" timestamp="1586959638008">
+      <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state width="757" height="213" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@0.0.1536.834" timestamp="1586874250557" />
+    <state width="680" height="193" key="GridCell.Tab.0.right/0.0.1536.834/1920.0.1920.1050@1920.0.1920.1050" timestamp="1586959638008" />
   </component>
 </project>
