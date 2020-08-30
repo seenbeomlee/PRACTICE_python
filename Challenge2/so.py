@@ -19,24 +19,31 @@ def extract_job(html):
   # 구조로 되어있는데, recursive=False를 사용해서, find_all이 첫번 째 span만 가져오게 설정한 것이다.
   company, location = html.find("h3", {"class":"fc-black-700"}).find_all("span",recursive=False)
   company = company.get_text(strip=True)
-  location = location.get_text(strip=True)
+  location = location.get_text(strip=True).strip("\n")
+  job_id = html['data-jobid']
   # above code is same as below
   # company_row = ...
   # compnay = company_raw[0] ..
   # location = company_raw[1] ..
 
-  return {'title':title}
+  return {
+    'title': title,
+    'company': company,
+    'location': location,
+    'apply-link': f"  https://stackoverflow.com/jobs/{job_id}",
+    }
 
 def extract_jobs(last_page):
   jobs = []
   for page in range(last_page):
+    print(f"Scrapping SO: Page: {page}")
     result = requests.get(f"{URL}&pg={page+1}")
     soup = BeautifulSoup(result.text, "html.parser")
     results = soup.find_all("div", {"class": "-job"})
     for result in results:
       job = extract_job(result)
       jobs.append(job)
-    return jobs
+  return jobs
 
 
 def get_jobs():
