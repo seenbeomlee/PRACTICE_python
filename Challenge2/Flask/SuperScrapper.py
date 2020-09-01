@@ -6,8 +6,8 @@ app = Flask("SuperScrapper")
 def home():
   return "Hello! Welcome to mi casa!"
 
-@app.route("/contact")
-def anyName():
-  return "Contact me!"
+@app.route("/<username>")
+def anyName(username):
+  return f"{username} hello!"
 
-app.run()
+app.run("0.0.0.0")
