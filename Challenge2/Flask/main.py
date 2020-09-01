@@ -9,6 +9,7 @@ def home():
 @app.route("/report")
 def report():
   word = request.args.get('word')
+  word = word.lower()
   return render_template("report.html", searchingBy=word, potato='imPotato')
 
 app.run(host="0.0.0.0")
