@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask("SuperScrapper")
 
@@ -6,5 +6,9 @@ app = Flask("SuperScrapper")
 def home():
   return render_template("home.html")
 
+@app.route("/report")
+def report():
+  word = request.args.get('word')
+  return render_template("report.html", searchingBy=word, potato='imPotato')
 
 app.run(host="0.0.0.0")
