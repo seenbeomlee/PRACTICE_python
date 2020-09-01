@@ -15,15 +15,15 @@ def report():
   word = request.args.get('word')
   if word:
     word = word.lower()
-    fromDB = db.get(word)
-    if fromDB:
-      jobs = fromDB
+    existingJobs = db.get(word)
+    if existingJobs:
+      jobs = existingJobs
     else:
       jobs = get_jobs(word)
       #save results inside of fask DB (Dynamic Programming..? maybe)
       db[word] = jobs
   else:
     return redirect("/")
-  return render_template("report.html", searchingBy=word, resultsNumber = len(jobs), potato='imPotato')
+  return render_template("report.html", searchingBy=word, resultsNumber = len(jobs), jobs=jobs, potato='imPotato')
 
 app.run(host="0.0.0.0")
