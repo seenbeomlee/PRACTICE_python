@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>sblee's Popular Hacker News</title>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+  <style>
+    section {
+      display: grid;
+      gab:20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>sblee's Hacker News</h1>
+  <div>
+    <span>{{commentsTable.points}} points | By {{commentsTable.author}} </span>
+    <a href="{{commentsTable.url}}" target="_blank"> {{commentsTable.title}}</a>
+  </div>
+  <section>
+    {% for comment in commentsTable.children %}
+    <div style="margin-top: 20px">
+      <div>{{comment.author}} </div>
+      <div>{{comment.text|safe}}</div>
+    </div>
+
+    {% endfor %}
+  <section>
+</body>
+
+</html>

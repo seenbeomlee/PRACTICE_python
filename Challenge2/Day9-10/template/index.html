@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>sblee's Popular Hacker News</title>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+  <style>
+    section {
+      display: grid;
+      gab:20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>sblee's Hacker News</h1>
+  <div>
+    Order by: 
+    <a href="/?=popular"> Popular</a>
+    <a href="/?order_by=new"> New</a>
+  </div>
+  <section>
+    {% for news in newsTable %}
+      <div style="margin-top: 20px">
+        <a href="{{news.objectID}}">{{news.title}} |</a>
+        <a href="{{news.url}}" target="_blank"> {{news.url}}</a>
+      </div>
+      <div style="">
+        <span>{{news.points}} points | By: {{news.author}} | {{news.num_comments}} comments</span>
+      </div>
+      <div> </div>
+    {% endfor %}
+  <section>
+</body>
+
+</html>
