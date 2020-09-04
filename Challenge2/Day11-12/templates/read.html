@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+    Reddit Top Reader
+  </title>
+  <link href="https://andybrewer.github.io/mvp/mvp.css" rel="stylesheet"></link>
+</head>
+
+<body>
+  <header>
+    <h1>Reddit Top Reader</h1>
+    <h3>Reading: {{readingHeader}}</h3>
+  </header>
+  <main>
+    {% for content in res %}
+      <div>
+        {% if content.link != '#' %}
+          <a href="{{content.link}}" target="_blank">{{content.title}}</a>
+          <h4>{{content.votes}} upvotes·{{content.sub}}</h4>
+        {% else %}
+        {% endif %}
+      </div>
+      <hr />
+    {% endfor %}
+  </main>
+</body>
+
+</html>
